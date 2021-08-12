@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import IsLoadingAndError from './IsLoadingAndError';
+// import IsLoadingAndError from './IsLoadingAndError';
 
 import {
   BrowserRouter as Router,
@@ -16,12 +16,12 @@ import Profile from './Profile';
 class App extends React.Component {
 
   render() {
-    const { isAuthenticated } = this.props.auth0;
+    //const { isAuthenticated } = this.props.auth0;
     console.log('app', this.props);
     return (
       <>
         <Router>
-          <IsLoadingAndError>
+          {/* <IsLoadingAndError> */}
             {/*<IsLoadingAndError>*/}
             <Header />
             <Switch>
@@ -36,7 +36,7 @@ class App extends React.Component {
               </Route>
             </Switch>
             <Footer />
-          </IsLoadingAndError>
+          {/* </IsLoadingAndError> */}
         </Router>
 
 
