@@ -22,7 +22,7 @@ export class Content extends Component {
                     "Authorization":`Bearer ${jwt}`
                 },
                 method:'get',
-                baseURL:process.env.REACT_AP_SERVER,
+                baseURL:process.env.REACT_APP_SERVER,
                 url :'./test'
             };
             axios(config).then((axiosResponse)=>{

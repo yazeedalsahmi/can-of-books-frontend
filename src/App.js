@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import IsLoadingAndError from './IsLoadingAndError';
+// import IsLoadingAndError from './IsLoadingAndError';
 
 import {
   BrowserRouter as Router,
@@ -21,7 +21,7 @@ class App extends React.Component {
     return (
       <>
         <Router>
-          <IsLoadingAndError>
+          {/* <IsLoadingAndError> */}
             {/*<IsLoadingAndError>*/}
             <Header />
             <Switch>
@@ -36,7 +36,7 @@ class App extends React.Component {
               </Route>
             </Switch>
             <Footer />
-          </IsLoadingAndError>
+          {/* </IsLoadingAndError> */}
         </Router>
 
 
