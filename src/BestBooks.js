@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './BestBooks.css';
 import axios from 'axios';
+
 import Carousel from 'react-bootstrap/Carousel';
 import { withAuth0 } from '@auth0/auth0-react';
 
@@ -85,3 +86,5 @@ class BestBooks extends React.Component {
 }
 
 export default withAuth0(BestBooks);
+
+
