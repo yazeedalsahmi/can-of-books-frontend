@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import IsLoadingAndError from './IsLoadingAndError';
+
+
 
 import {
   BrowserRouter as Router,
@@ -21,26 +22,23 @@ class App extends React.Component {
     return (
       <>
         <Router>
-          <IsLoadingAndError>
-            {/*<IsLoadingAndError>*/}
-            <Header />
-            <Switch>
-              <Route exact path="/">
-                {/* TODO: if the user is logged in, render the `BestBooks` component, if they are not, render the `Login` component */}
-                {this.props.auth0.isAuthentticated && <Login />}
-                {this.props.auth0.isAuthenticates && <BestBooks />}
-              </Route>
-              <Route exact path="/profile">
-                {/* TODO: add a route with a path of '/profile' that renders a `Profile` component */}
-                <Profile />
-              </Route>
-            </Switch>
-            <Footer />
-          </IsLoadingAndError>
+          {/*<IsLoadingAndError>*/}
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              {/* TODO: if the user is logged in, render the `BestBooks` component, if they are not, render the `Login` component */}
+              {this.props.auth0.isAuthentticated && <Login />}
+              {this.props.auth0.isAuthenticates && <BestBooks />}
+            </Route>
+            <Route exact path="/profile">
+              {/* TODO: add a route with a path of '/profile' that renders a `Profile` component */}
+              <Profile />
+            </Route>
+          </Switch>
         </Router>
-
-
+        <Footer />
       </>
+
     );
   }
 }
